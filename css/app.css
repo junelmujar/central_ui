@@ -1,0 +1,161 @@
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+.app-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.app-container .app-toolbar {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  width: 250px;
+  padding: 20px 0;
+}
+.app-container .app-toolbar .app-brand {
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  margin: 25px;
+}
+.app-container .app-toolbar ul {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+.app-container .app-toolbar ul li {
+  display: block;
+}
+.app-container .app-toolbar ul li a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.app-container .app-toolbar ul li a i.fa {
+  color: #fff;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+}
+.app-container .app-toolbar ul li a span {
+  display: inline-block;
+  margin-left: 10px;
+  color: #fff;
+}
+.app-container .app-toolbar ul li a:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.app-container .app-toolbar ul li.active a {
+  background: #0069d9;
+}
+.app-container .app-toolbar ul li.separator {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.app-container .app-content {
+  position: absolute;
+  top: 0;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  overflow-y: auto;
+}
+.app-container.app-toolbar__left .app-toobar {
+  left: 0;
+  right: auto;
+}
+.app-container.app-toolbar__left .app-content {
+  position: absolute;
+  top: 0;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+}
+.app-container.app-toolbar__left.app-toolbar-size__compact .app-content {
+  left: 60px;
+}
+.app-container.app-toolbar__right .app-toolbar {
+  left: auto;
+  right: 0;
+}
+.app-container.app-toolbar__right .app-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 250px;
+  bottom: 0;
+}
+.app-container.app-toolbar__right.app-toolbar-size__compact .app-toolbar {
+  width: 60px;
+}
+.app-container.app-toolbar__right.app-toolbar-size__compact .app-content {
+  right: 60px;
+}
+@media (max-width: 544px) {
+  .app-container .app-toolbar {
+    width: 60px;
+  }
+  .app-container .app-toolbar .app-brand {
+    display: none;
+  }
+  .app-container .app-toolbar ul li a {
+    padding: 20px 0px;
+    line-height: 0;
+    text-align: center;
+  }
+  .app-container .app-toolbar ul li a i.fa {
+    font-size: 24px;
+    color: #fff;
+  }
+  .app-container .app-toolbar ul li a span {
+    display: none;
+  }
+  .app-container .app-content {
+    left: 60px;
+  }
+  .app-container.app-toolbar__left .app-content {
+    left: 60px;
+  }
+  .app-container.app-toolbar__right .app-content {
+    right: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .app-container .app-toolbar {
+    width: 60px;
+  }
+  .app-container .app-toolbar .app-brand {
+    display: none;
+  }
+  .app-container .app-toolbar ul li a {
+    padding: 20px 0px;
+    line-height: 0;
+    text-align: center;
+  }
+  .app-container .app-toolbar ul li a i.fa {
+    font-size: 24px;
+    color: #fff;
+  }
+  .app-container .app-toolbar ul li a span {
+    display: none;
+  }
+  .app-container .app-content {
+    left: 60px;
+  }
+  .app-container.app-toolbar__left .app-content {
+    left: 60px;
+  }
+  .app-container.app-toolbar__right .app-content {
+    right: 60px;
+  }
+}
